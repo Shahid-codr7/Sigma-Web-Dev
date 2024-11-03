@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        html
+        {
+            font-size: 12px;
+        }
+        .box
+        {
+            box-sizing: border-box;
+            border: 9px solid black;
+            /* width: 1919px; */
+            width: 90vw;
+            height: 10vh;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .container
+        {
+            box-sizing: border-box;
+            border: 9px solid black;
+            /* width: 1919px; */
+            width: 90vw;
+            min-height: 80vh;
+            background-color: aquamarine;
+            margin: 23px auto;
+            font-size: 16px;
+        }
+        .container > div
+        {
+            border: 3px solid red;
+            font-size: 2rem;
+            width: 50%;
+        }
+        .container > div > p
+        {
+            border: 2px solid blue;
+            font-size: 2em;
+            width: 50%;
+        }
+
+        .mycont
+        {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 100vmin;
+            /* width: 80em; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        CSS Sizing Units
+    </div>
+    <div class="container">
+        hello i am CONTAINER there Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nostrum deleniti quidem asperi
+        <p>
+            i am PARA Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur culpa ratione autem eum tenetur a ipsa sint cum architecto. In distinctio ipsam labore veritatis culpa.
+        </p>
+        <div>
+            abe oyeee
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga optio, voluptates consequuntur aperiam quis excepturi. Aliquid aspernatur quibusdam a vitae.
+            <p>
+                hello there
+            </p>
+        </div>
+        <div class="mycont">
+            i am mycont.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit illo sequi eaque, veniam dignissimos maxime officiis nostrum dolores aspernatur.
+        </div>
+    </div>
+    
+</body>
+</html>

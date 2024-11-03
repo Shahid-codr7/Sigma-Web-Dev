@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Element Selector */
+      div 
+      {
+        color: rgb(0, 0, 0);
+      }
+      /*class selector */ 
+      .red    
+      {
+        background-color: antiquewhite;
+      }
+      /*id selector */
+      #green   
+      {
+        background-color: yellow;
+      }
+      /*Child selector */ 
+      div > p 
+      {
+        color: rgb(4, 0, 255);
+        background-color: red;
+      }
+      /* Descendent Selector */
+      div p  
+      {
+        color: rgb(252, 12, 12);
+        background-color: aquamarine;
+      }
+
+      /*Universal selector */ 
+      *
+      {
+        margin: 0;
+        padding: 0;
+      }
+
+    /*Pseudo selectors */ 
+    a:visited
+    {
+        color: rgb(58, 254, 23);
+    }
+    a:link
+    {
+        color: rgb(212, 7, 7);
+    }
+    a:active
+    {
+        background-color: black;    
+    }
+    a:hover
+    {
+        background-color: rgb(58, 254, 23);
+    }
+    p:first-child
+    {/*where <p> is the first para present*/
+        background-color: pink;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="red">
+      Hello, World!
+      <p>Lets go i'm para inside 1st div</p>
+    </div>
+    <div id="green">
+      i am another div
+      <article>
+        <p>Lets go i'm para inside 2nd div</p>
+        <br>
+        <p>
+            i am 2nd child para of 2nd div
+        </p>
+      </article>
+    </div>
+    <a href="https://www.google.com">Google de vich Search Engine</a>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Shadows in box and text</title>
+    <meta name="description" content="About: box shadow, text-shadow, outline, bordor properties">
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 45px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 8px 7px 8px rgb(35 206 235);
+      }
+      .text-element {
+        margin: 20px;
+        text-shadow: 8px 5px 6px rgba(162, 69, 255, 0.6);
+        outline: 2px solid rgb(0, 255, 89);
+        outline-offset: 2px;
+        outline-width: 2px;
+        border: 2px solid black;
+        border-radius: 2px;
+        /* border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        border-left: 2px solid pink; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">i am a box. and i am very happy</div>
+    <div class="text-element">
+      hey there !! how are you Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Libero, minima?
+    </div>
+  </body>
+</html>

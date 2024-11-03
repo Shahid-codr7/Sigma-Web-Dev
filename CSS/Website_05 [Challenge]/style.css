@@ -1,0 +1,11 @@
+div > p
+{
+    color: white;
+    background-color: aqua;
+    
+}
+div p:first-child
+{
+    color: red;
+    background-color: yellow;
+}

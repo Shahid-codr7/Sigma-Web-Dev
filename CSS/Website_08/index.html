@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <meta name="description" content="About inline-block, display: none; visibility: hidden;display: flex;
+    justify-content: center; ">
+    <style>
+        *
+        {
+            margin: 0px;
+            /* padding: 100px; */
+        }
+        .box1
+        {
+            margin: 10px;
+            padding: 45px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .box
+        {
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        
+        
+        .box2
+        {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 box">
+        This a box
+    </div>
+    <div class="box1">
+        also a nice box
+    </div>
+
+    <span>
+        This is a span
+    </span>
+    <span>
+        also a nice span
+
+    </span>
+</body>
+</html>
